@@ -1,5 +1,7 @@
-# Bleague_범 올라온다
+# B 리그_범 올라온다
 KIEE 2021 Mini Drone Flight Competition B_League Bumup
+
+---
 
 ## 대회 진행 전략
 * **파란색 링 검출 및 중점 찾기**
