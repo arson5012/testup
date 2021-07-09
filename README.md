@@ -4,6 +4,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 ---
 
 ## 대회 진행 전략
+
 * **파란색 링 검출 및 중점 찾기**
 1. 파란색 HSV 설정
 2. 컬러 BGR 영상을 HSV로 변환후 설정된 HSV값에 의해 이진화된 이미지 출력
@@ -15,10 +16,10 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
    
 * **드론 이동**
     > 드론 카메라의 화면 중점과 화면 안에서 검출된 파란색 링의 픽셀들 중점을 비교
-1. 상승 & 하강 제어 
-   
-1. 좌 이동 & 우 이동 제어
-
+1. 상승 & 하강 제어 \
+   ![상하](https://1.bp.blogspot.com/-1Eo_hVjjndA/YOfqAbu7W6I/AAAAAAAAACI/40jUd1XetfQeUTMNQ8u-SoAodLHzSutkACLcBGAsYHQ/w732-h298/%25EC%2583%2581%25ED%2595%2598.jpg)
+1. 좌 이동 & 우 이동 제어\
+   ![좌우](https://1.bp.blogspot.com/-uxoMlI81qmE/YOfqASY_C6I/AAAAAAAAACE/xNqdFpkVSuIdSW_1BumhjbCJf4s--4DwACLcBGAsYHQ/w737-h300/%25EC%25A2%258C%25EC%259A%25B0.jpg)
 * **빨간색 / 보라색 색상 검출**
    > 인식된 빨간색 크기에 따라 링의 거리 추정\
      ![링거리](https://lh3.googleusercontent.com/-NxNQWg7fGx4/YOfEdIFLnDI/AAAAAAAAAB0/YXxvg2rDA0II3rLnqSUkZmq9gybzF6l3ACLcBGAsYHQ/w456-h234/rr.jpg)
