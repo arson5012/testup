@@ -26,6 +26,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 
 
 ## 알고리즘 설명
+![블록도](https://lh3.googleusercontent.com/proxy/JcYnsKKvxbL00xLeGRfyjEL7p4-rPjAJVZdgNq2aOgFpIipVjDtU4p6salj1-5Ak4U6Nxdq_jgMsX85jy2_-TeR1NPcpQ070_3ZMWdtP5wQcPnk89JIAZQXM6ADR76nLALExjyQEGgi7sQF3FyhK9o3UaoLoDdd1)
 
 1. 드론 연결 및 이륙
     > 설명 또는 사진1
