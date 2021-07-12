@@ -3,7 +3,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 2021 미니드론 B리그 범올라온다 입니다
 
 ---
-
+<!-------------------------------------------------------------Part 1------------------------------------------------------------------------------------------>
 ## 대회 진행 전략
 
 * **파란색 링 검출 및 중점 찾기**
@@ -13,8 +13,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 3. 인식된 파란색 링의 중점 찾기   
     > cv2.connectedComponentsWithStats 함수를 사용하여 중점을 찾음\
     >![HSV](https://1.bp.blogspot.com/-wScFOulU8-c/YOfC9pS9tDI/AAAAAAAAABU/DA0k8E1LH1AIUrZydIanKJyCfPLj5xmNQCLcBGAsYHQ/w415-h332/2%25EB%258B%25A8%25EA%25B3%2584.PNG)
-
-   
+  
 * **드론 이동**
     > 드론 카메라의 화면 중점과 화면 안에서 검출된 파란색 링의 픽셀들 중점을 비교
 1. 상승 & 하강 제어 \
@@ -30,7 +29,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
    > 보라색 표식을 인식하면 착지  
 ---
 
-
+<!-------------------------------------------------------------Part 2------------------------------------------------------------------------------------------>
 ## 알고리즘 설명
 ![블록도](https://lh3.googleusercontent.com/proxy/JcYnsKKvxbL00xLeGRfyjEL7p4-rPjAJVZdgNq2aOgFpIipVjDtU4p6salj1-5Ak4U6Nxdq_jgMsX85jy2_-TeR1NPcpQ070_3ZMWdtP5wQcPnk89JIAZQXM6ADR76nLALExjyQEGgi7sQF3FyhK9o3UaoLoDdd1)
 
@@ -69,7 +68,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 
 ---
 
-
+<!-------------------------------------------------------------Part 3------------------------------------------------------------------------------------------>
 ## 소스코드 설명
 
 **표식 픽셀개수 계산**
