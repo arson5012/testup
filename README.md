@@ -1,5 +1,6 @@
 # B 리그_범 올라온다
-KIEE 2021 Mini Drone Flight Competition B_League Bumup
+KIEE 2021 Mini Drone Flight Competition B_League Bumup  
+2021 미니드론 B리그 범올라온다 입니다
 
 ---
 
@@ -21,12 +22,12 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 1. 좌 이동 & 우 이동 제어\
    ![좌우](https://1.bp.blogspot.com/-uxoMlI81qmE/YOfqASY_C6I/AAAAAAAAACE/xNqdFpkVSuIdSW_1BumhjbCJf4s--4DwACLcBGAsYHQ/w737-h300/%25EC%25A2%258C%25EC%259A%25B0.jpg)
 * **빨간색 / 보라색 색상 검출**
-   > 인식된 빨간색 크기에 따라 링의 거리 추정\
+   > 인식된 빨간색 표식의 픽셀에 따라 링의 거리 추정  
      ![링거리](https://lh3.googleusercontent.com/-NxNQWg7fGx4/YOfEdIFLnDI/AAAAAAAAAB0/YXxvg2rDA0II3rLnqSUkZmq9gybzF6l3ACLcBGAsYHQ/w456-h234/rr.jpg)
 1. 빨간색 HSV 설정
    > ![적색](https://lh3.googleusercontent.com/-rF84v1VxS0s/YOffQ0TS84I/AAAAAAAAAB8/0Do9tuvqx9EZ0_DOq9jsDSkhEngZ_veGwCLcBGAsYHQ/w487-h193/KakaoTalk_20210709_142837811_02.png)
 1. 보라색 HSV 설정
-   > 보라색 표식을 인식하면 착지\
+   > 보라색 표식을 인식하면 착지  
 ---
 
 
@@ -34,25 +35,26 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
 ![블록도](https://lh3.googleusercontent.com/proxy/JcYnsKKvxbL00xLeGRfyjEL7p4-rPjAJVZdgNq2aOgFpIipVjDtU4p6salj1-5Ak4U6Nxdq_jgMsX85jy2_-TeR1NPcpQ070_3ZMWdtP5wQcPnk89JIAZQXM6ADR76nLALExjyQEGgi7sQF3FyhK9o3UaoLoDdd1)
 
 1. 드론 연결 및 이륙
-    > 설명 또는 사진1
+    > sendTakeOff() 함수를 사용한 드론 이륙
 2. 영상수신
-    > 설명 또는 사진2
+    > for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):  
+      실시간 영상 수신
 3. 전처리
     > 입력영상에서 원하는 색상만을 사용하기 위한 과정
       파란색의 통과할 링, 1,2차의 빨간 표식 그리고 3차의 보라 표식의 HSV값을 미리 저장한 후, 
       원본영상을 HSV 색영상으로 변환, 이진화하여 필요한 색상만을 찾는다.
       
-4. 픽셀개수 계산
-    > 드론과 표식과의 거리를 판단하기 위한 방법
-      드론이 표식과 가까워지면 이진화된 입력영상에서 들어오는 픽셀의 개수가 커진다.
-      이를 이용하여 드론이 링을 통과한 후 표식과 가까워졌는지를 판단한다.
-      
-5. 링 위치 파악
-     > 빨간 표식 크기에 따라 링의 거리를 판단하고 1미터 보다 가깝다면 빨간 표식을 중점으로 계산하고,\
+4. 링 위치 파악
+     > 빨간 표식 크기에 따라 링의 거리를 판단하고 1미터 보다 가깝다면 빨간 표식을 중점으로 계산하고,  
        1미터 보다 멀다면 링의 중점을 찾도록 한다
    
-6. 링 중점 좌표 계산  
+5. 링 중점 좌표 계산  
      > 링이 1미터 보다 멀다면 드론이 링을 통과할 수 있도록 입력영상에서 링의 중점 좌표를 찾는다. 
+
+6. 링 통과 후 픽셀개수 계산
+    > 드론과 표식과의 거리를 판단하기 위한 방법으로  
+      드론이 표식과 가까워지면 이진화된 입력영상에서 들어오는 픽셀의 개수가 커진다.
+      이를 이용하여 드론이 링을 통과한 후 표식과 가까워졌는지를 판단한다.      
       
 7. 드론 위치 제어  
      > 앞서 찾은 링의 중점좌표로 드론의 현재 위치를 판단하고 링의 중앙에 드론이 위치하고록 제어한다. 중앙에 위치되면 직진한다.
