@@ -24,7 +24,7 @@ KIEE 2021 Mini Drone Flight Competition B_League Bumup
    > 인식된 빨간색 표식의 픽셀에 따라 링의 거리 추정  
      ![링거리](https://lh3.googleusercontent.com/-NxNQWg7fGx4/YOfEdIFLnDI/AAAAAAAAAB0/YXxvg2rDA0II3rLnqSUkZmq9gybzF6l3ACLcBGAsYHQ/w456-h234/rr.jpg)
 1. 빨간색 HSV 설정
-   > ![적색](https://lh3.googleusercontent.com/-rF84v1VxS0s/YOffQ0TS84I/AAAAAAAAAB8/0Do9tuvqx9EZ0_DOq9jsDSkhEngZ_veGwCLcBGAsYHQ/w487-h193/KakaoTalk_20210709_142837811_02.png)
+   > ![적색](https://1.bp.blogspot.com/-ba4HRclZpec/YOuQCt66HoI/AAAAAAAAACU/NXbd0MnnYIQa-wPthcl6M4vk0pqbiaWHwCLcBGAsYHQ/w722-h268/KakaoTalk_20210709_142837811_02.png)
 1. 보라색 HSV 설정
    > 보라색 표식을 인식하면 착지  
 ---
